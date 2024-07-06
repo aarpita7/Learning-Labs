@@ -1,0 +1,26 @@
+import pandas as pd 
+import numpy as np
+
+# pandas series: a=pd.Series(data=[],index=[]) --index default=0,1,2,3,4....
+ser_list= pd.Series(['a','b','c'] ,index=['q','r','s'])
+print(ser_list)
+
+array=np.array([1,2,3,4])
+arr_ser=pd.Series(array)
+print(arr_ser)
+
+ser_dict=pd.Series({1:11,2:22,3:33,4:44})
+print(ser_dict)
+
+ser_sca=pd.Series(13000,index=['a','b','c','d'])
+print(ser_sca)
+
+ser=pd.Series([1,2,3,4])
+value=ser[2]
+print(value)
+
+ser=pd.Series([1,2,3,4])
+print(ser.head(3))
+
+ser=pd.Series([1,2,3,4])
+print(ser.tail(3))
